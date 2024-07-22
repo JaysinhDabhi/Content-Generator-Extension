@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
+
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     width: 300px;
-    background-color: #fff;
+    background: url('assets/icons/background.png') no-repeat center center fixed;
+    background-size: cover;
     color: #000;
     text-align: center;
 }
@@ -25,6 +29,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Styles for the button-group container */
 .button-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,26 +37,43 @@ h1 {
     justify-items: center;
 }
 
+/* Basic button styles */
 .button-group button {
     width: 120px;
     padding: 10px;
     font-size: 1em;
     cursor: pointer;
-    border: 1px solid #000;
-    background-color: #fff;
-    transition: background-color 0.3s;
+    background: transparent; /* No background color by default */
+    border: none; /* No border by default */
+    color: black; /* Default text color */
+    transition: color 0.3s; /* Smooth transition for text color */
 }
 
+/* Gradient text color on hover */
 .button-group button:hover {
-    background-color: #f0f0f0;
+    color: transparent; /* Hide default text color */
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradient background on hover */
+    background-clip: text; /* Clip gradient to text */
+    -webkit-background-clip: text; /* Safari compatibility */
 }
 
 footer {
     margin-top: 20px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
+/* Style for the link within the footer */
 footer a {
-    color: #000;
-    text-decoration: none;
+    color: #000; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Gradient text color on hover */
+footer a:hover {
+    color: transparent; /* Hide default text color */
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradient text color */
+    background-clip: text; /* Clip gradient to text */
+    -webkit-background-clip: text; /* Safari compatibility */
 }

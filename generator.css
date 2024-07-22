@@ -3,31 +3,67 @@ body {
     margin: 0;
     padding: 0;
     width: 300px;
-    background-color: #fff;
+    background: url('assets/icons/background.png') no-repeat center center fixed;
+    background-size: cover;
     color: #000;
     text-align: center;
 }
 
 .container {
     padding: 20px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 h1 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    margin-top: 50px; /* Adjusted for better spacing with the back button */
+}
+
+#backButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0;
+}
+
+#backButton img {
+    width: 24px;
+    height: 24px;
 }
 
 .output {
     margin-top: 20px;
 }
 
+#generateButton {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Blue to Purple gradient */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#generateButton:hover {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Reverse gradient on hover */
+}
+
+/* Styles for the generatedText */
 #generatedText {
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 5px;
     word-break: break-all;
     width: calc(100% - 22px);
-    margin: 0 auto;
+    margin: 0 auto 10px;
     display: block;
 }
 
@@ -35,14 +71,24 @@ button {
     padding: 10px;
     font-size: 1em;
     cursor: pointer;
-    border: 1px solid #000;
     background-color: #fff;
+    border: none;
+    border-radius: 10%;
     margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+#copyButton {
+    width: 100%;
 }
 
 footer {
     margin-top: 20px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 footer a {
