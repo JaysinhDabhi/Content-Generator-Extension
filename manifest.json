@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Content Generator",
+    "version": "1.0",
+    "description": "Generate dummy text and other fake details.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "assets/icons/icon.png",
+        "48": "assets/icons/icon.png",
+        "128": "assets/icons/icon.png"
+      }
+    },
+    "permissions": [
+      "storage",
+      "clipboardWrite"
+    ],
+    "icons": {
+      "16": "assets/icons/icon.png",
+      "48": "assets/icons/icon.png",
+      "128": "assets/icons/icon.png"
+    }
+  }
+  
