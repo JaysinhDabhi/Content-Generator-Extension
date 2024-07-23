@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/KatsuteDev/GitHub-Red-Issues#readme">
-        <img src="https://raw.githubusercontent.com/KatsuteDev/GitHub-Red-Issues/main/assets/icon.png" width=100 alt="(✔)">
+        <img src="assets/icons/icon.png width=100 alt="(✔)">
     </a>
     <h3>GitHub Red Issues</h3>
     <p>Revert closed GitHub issues from purple back to red.</p>
